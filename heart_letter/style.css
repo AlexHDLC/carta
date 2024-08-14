@@ -1,15 +1,15 @@
 #envelope {
   margin: 150px;
   position: relative;
-  width: 280px;
-  height: 180px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  width: 420px; /* Aumenta el ancho de 280px a 400px */
+  height: 270px; /* Aumenta la altura de 180px a 250px */
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
   background-color: #f9c5c8;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .front {
@@ -20,21 +20,21 @@
 }
 
 .flap {
-  border-left: 140px solid transparent;
-  border-right: 140px solid transparent;
-  border-bottom: 82px solid transparent;
+  border-left: 210px solid transparent;
+  border-right: 210px solid transparent;
+  border-bottom: 123px solid transparent;
   /* a little smaller */
-  border-top: 98px solid #ff3333;
+  border-top: 147px solid #ff3333;
   /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
 
 .pocket {
-  border-left: 140px solid #ff9999;
-  border-right: 140px solid #ff9999;
-  border-bottom: 90px solid #fd8787;
-  border-top: 90px solid transparent;
+  border-left: 210px solid #ff9999;
+  border-right: 210px solid #ff9999;
+  border-bottom: 135px solid #fd8787;
+  border-top: 135px solid transparent;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -42,11 +42,11 @@
 .letter {
   position: relative;
   background-color: #f9c5c8;
-  width: 90%;
+  width: 90%; /* Ajusta el ancho para que la carta ocupe más espacio */
   margin-left: auto;
   margin-right: auto;
-  height: 90%;
-  top: 5%;
+  height: 90%; /* Ajusta la altura para que la carta ocupe más espacio */
+  top: 7.5%;
   border-radius: 6px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
 }
@@ -112,11 +112,13 @@
 }
 
 .hearts {
+  display: none;
+  /*
   position: absolute;
   top: 90px;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 2;*/
 }
 
 .heart {
@@ -231,6 +233,7 @@ body {
 
 .reset {
   text-align: center;
+  margin-top: 70px;
 }
 
 .reset button {
@@ -243,13 +246,13 @@ body {
   border-radius: 4px;
   color: #ff5757;
   display: inline-block;
-  font-size: 14px;
+  font-size: 21px;
   text-transform: uppercase;
-  margin: 5px;
-  padding: 10px;
+  margin: 7.5px;
+  padding: 15px;
   line-height: 1em;
   text-decoration: none;
-  min-width: 120px;
+  min-width: 100px;
   cursor: pointer;
 }
 
